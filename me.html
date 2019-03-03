@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Coda:800" rel="stylesheet">
+<style>
+body{
+background: linear-gradient(white, grey);   
+font-family: 'Coda', cursive;
+font-size:40px;
+color:#374161;
+}
+
+.fa {
+    margin-left: auto;
+    margin-right: auto;
+  padding: 5px;
+  font-size: 15px;
+  width: 12px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: black;
+  color: white;
+}
+
+.fa-google {
+  background:black;
+  color: white;
+}
+
+.fa-youtube {
+  background: black;
+  color: white;
+}
+
+.fa-instagram {
+  background: black;
+  color: white;
+}
+
+
+.fa-snapchat-ghost {
+  background: black;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.H1{
+font-size:30px;
+color:#111;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+text-align:center;
+}
+
+.passion{
+margin-left:70px
+font-size:12px;
+text-align:center;
+}
+
+.button {
+margin-left:40px;
+font-family: 'Coda', cursive;
+  padding: 10px 10px;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #111;
+  background-color: white;
+  border: none;
+  border-radius: 11px;
+  box-shadow: 0 6px #999;
+
+}
+
+
+
+
+.button:hover {background-color: grey}
+
+.button:active {
+  background-color: white;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#example1 {
+font-size:20px;
+margin-top:50px;
+color:#374161;
+    border: 5px solid grey;
+   background-color:white; 
+    padding:15px;
+}
+
+#example2 {
+font-size:20px;
+color:#374161;
+background-color:white;
+margin-top:50px;
+    border: 5px solid grey;
+    padding:15px;
+}
+
+#example3 {
+font-size:20px;
+color:#374161;
+background-color:white;
+margin-top:50px;
+    border: 5px solid grey;
+    padding:15px;
+}
+
+#div1 {
+    width: 100px;
+
+    height: ;
+
+    font-weight: bold;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+
+#div1 {
+    width: 100px;
+    height: ;
+    background-color: ;
+    font-weight: bold;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+
+#div2 {
+    width: 100px;
+    height: ;
+    background-color: ;
+    font-weight: bold;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+
+#div3 {
+    width: 100px;
+    height: ;
+    background-color: ;
+    font-weight: bold;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+
+#div4 {
+    width: 100px;
+    height: ;
+    background-color: ;
+    font-weight: bold;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+
+#div5 {
+    width: 100px;
+    height: ;
+    background-color: ;
+    font-weight: bold;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+
+
+
+/* Standard syntax */
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+#mydiv {
+    font-size:13px;
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+}
+
+#mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+}
+
+.contact{
+color:black;
+}
+
+h1{
+margin-left:20px
+}
+
+h3{
+font-size:20px;
+}
+
+footer {
+font-size:13px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:white;
+    color: #111;
+    text-align: center;
+}
+
+.talk{
+text-align:center;
+font-size:15px;
+}
+
+.passion{
+    font-family: ariel;
+    color:black;
+    font-size:20px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+</style>
+
+<div class="fafa">
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-snapchat-ghost"></a>
+</div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="me.html">About</a>
+  <a href="pro.html">Portfolio</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+    <div id="main">
+  <span style="position:fixed;margin-top:250px;color:black;font-size:25px;cursor:pointer" onclick="openNav()">&#9776;</span>
+   </div>
+<h1>About Me</h1>
+
+<h2 class="H1">Producing high quality websites<br> and exceptional user experience</h2>
+      <p class="passion">Hello I'm Chris, thank you for visiting my portfolio website. As a Web Developer, 
+I have a real passion for coding & designing browsers with HTML(5), CSS(3), JavaScript and a touch of JQuery. 
+I love coding from scratch as it enables me to learn the in's and out's of Web Development. 
+With this in mind, I am also able to work with Angular.js, PHP, Python and front end frameworks.</p>
+
+<div class="back">
+<h2>SKILLS</h2>
+
+<a href="#example1"><button class="button">HTML5</button></a>
+<a href="#example2"><button class="button">CSS3</button></a>
+<a href="#example3"><button class="button">JavaScript</button></a>
+<a href="#example3"><button class="button">JQuery</button></a>
+<button class="button">PHP</button>
+<a href="#example3"><button class="button">Angular.js</button></a>
+<a href="#example2"><button class="button">Responsive Design</button></a>
+
+<div id="example1">
+<h2 class="5">HTML5</h2>
+<hr>
+<p><img src="html.png" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;float:left;">
+<br>
+HTML5 APIs<br>
+HTML5 graphics<br>
+HTML5 media<br>
+Drag and drop<br>
+Scalable Gector graphics
+</p>
+</div>
+
+
+<div id="example2">
+<h2>CSS3</h2><hr>
+<p>
+<div id="div1">Animation</div>
+<div id="div2">Responsive</div>
+<div id="div3">Transform</div>
+<div id="div4">Transitions</div>
+<div id="div5">Gradient</div>
+</p>
+<br>
+</div>
+
+<div id="example3">
+<h2 class="J">JavaScript</h2><hr>
+<h3>Draggable Element<h3>
+<div id="mydiv">
+<div id="mydivheader">Click here to move</div>
+<p>Move</p>
+<p>this</p>
+<p>Element</p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+<br>
+<div class="talk">
+<p> Let's talk<br> Do you want to get in touch or talk about a project?
+Feel free to contact me via email at 
+cespiritu@hotmail.co.uk<br>
+or drop a line in the form on the <a href="contact.html"><span class="contact">contact page</span></a></p>
+</div>
+<br>
+
+        <footer>
+            <p>Copyright © 2018 Christpher Espiritu</p>
+       </footer>
+
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById(("mydiv")));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+
+</script>
+
+</body>
+</html
